@@ -2,8 +2,17 @@
 <html>
 <title>계산</title>
 <head>
-<meta charset="UTF-8"> 
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script type="text/javascript" src ="calculator.js"></script>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 <script>
 function result(){
 document.getElementById("result").value=
@@ -18,7 +27,7 @@ calculator(document.getElementById("operator").value,document.getElementById("le
 연산:<input type="text" id="operator">
 숫자2:<input type="text" id="right"> 
 
-<input type="button" onclick ="result()" value="계산">
+<button class="btn btn-warning" type="submit" onclick="result()">계산</button>
 <input type="text" id="result">
 </body>
 </html>
