@@ -14,5 +14,5 @@ function calculator(operator, left, right){
 
 	// 곱하기
 	if(operator === '*')
-		return left/right;
+		return left*right;
 }
